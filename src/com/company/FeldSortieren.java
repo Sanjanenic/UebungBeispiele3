@@ -14,8 +14,13 @@ arrangeOrder(arr);
         int[] hilfe=new int[3];
 
         for (int iNr=0; iNr< numbers.length-1; iNr++ ) {
-           for(int )
 
+            if(numbers[iNr] > numbers[iNr+1]) {
+
+                numbers[iNr] = hilfe[0];
+                System.out.println(Arrays.toString(numbers));
+                System.out.println(Arrays.toString(hilfe));
+            }
 
 
         }
