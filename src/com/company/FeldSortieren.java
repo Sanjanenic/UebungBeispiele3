@@ -11,18 +11,21 @@ arrangeOrder(arr);
 
     public static void arrangeOrder(int[] numbers){
 
-        int[] hilfe=new int[3];
+        //int[] hilfe=new int[3];
+         int temp=0;
+        for (int iNr=0; iNr< numbers.length; iNr++ ) {
 
-        for (int iNr=0; iNr< numbers.length-1; iNr++ ) {
-
-            if(numbers[iNr] > numbers[iNr+1]) {
-
-                hilfe = new int[]{numbers[iNr], numbers[iNr + 1], };
-               // numbers[iNr] = hilfe[0];
-               // numbers[iNr+1]=hilfe[1];
-                System.out.println(Arrays.toString(numbers));
-                System.out.println(Arrays.toString(hilfe));
+            for(int j=iNr+1; j<numbers.length; j++){
+                if(numbers[iNr]>numbers[j]){
+                    temp= numbers[iNr];
+                   numbers[iNr]=numbers[j];
+                    numbers[j]=temp;
+                }
             }
+
+
+            }
+        System.out.println(Arrays.toString(numbers));
 
 
         }
@@ -37,7 +40,7 @@ arrangeOrder(arr);
 //[0, 0, 1, 0, 0, 4]
 //[0, 0, 0]
 
-        }
+
 
 //Schreiben Sie eine Methode mit dem Namen:
 //public static void arrangeOrder(int[] numbers) {
