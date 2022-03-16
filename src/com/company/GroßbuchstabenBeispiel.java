@@ -2,8 +2,11 @@ package com.company;
 
 public class GroßbuchstabenBeispiel {
     public static void main(String[] args) {
+
+
         System.out.println( BuchstabenGrossMachen("Wörter starten immer gut!   ")); //ovo vraca veliklo pocetno samo ako napisem pravilno, sa po jednim razmakom izmedju rijeci
     }
+
 
     public static String BuchstabenGrossMachen(String s){  //string je array karaktera, tako se ponasa
 
