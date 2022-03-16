@@ -17,7 +17,9 @@ arrangeOrder(arr);
 
             if(numbers[iNr] > numbers[iNr+1]) {
 
-                numbers[iNr] = hilfe[0];
+                hilfe = new int[]{numbers[iNr], numbers[iNr + 1], };
+               // numbers[iNr] = hilfe[0];
+               // numbers[iNr+1]=hilfe[1];
                 System.out.println(Arrays.toString(numbers));
                 System.out.println(Arrays.toString(hilfe));
             }
@@ -28,12 +30,14 @@ arrangeOrder(arr);
         }
        //
 
-
+//[0, 5, 1, 9, 0, 4]
+//[0, 0, 0]
+//[0, 0, 1, 9, 0, 4]
+//[0, 0, 0]
+//[0, 0, 1, 0, 0, 4]
+//[0, 0, 0]
 
         }
-
-
-
 
 //Schreiben Sie eine Methode mit dem Namen:
 //public static void arrangeOrder(int[] numbers) {
